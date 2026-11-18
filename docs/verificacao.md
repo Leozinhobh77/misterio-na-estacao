@@ -20,6 +20,7 @@ Registro do que foi executado nesta rodada, com ambiente e resultado. Não subst
 - Reiniciar fase: cancelar mantém a pista; confirmar limpa só a fase atual.
 - Recarregar a página e usar **Continuar** retoma o ponto salvo; vitória permanece após recarga.
 - Preferências: texto em 130% e áudio silenciado sobrevivem à recarga; o botão de som inicia com o rótulo correto.
+- Dicas em três níveis, na ordem (área provável → relação entre evidências → próximo passo), sem repetir a primeira; **Opções** também acessível pelo menu inicial.
 - Save corrompido: aviso no menu, cópia em `misterio-estacao:campaign:corrupt`, opções preservadas e novo jogo funcional.
 
 ## Navegador — móvel 390×844

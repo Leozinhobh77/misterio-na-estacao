@@ -1,0 +1,45 @@
+{
+  "name": "misterio-na-estacao",
+  "description": "Aventura narrativa de investigação em cinco fases, com progresso local.",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "electron.cjs",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "preview": "vite preview --host 0.0.0.0",
+    "desktop": "concurrently -k \"npm:dev\" \"npm:desktop:dev\"",
+    "desktop:dev": "wait-on http://localhost:5173 && electron . --dev",
+    "desktop:build": "npm run build && electron-builder --win"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "concurrently": "^9.1.2",
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.12",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.0",
+    "vitest": "^5.1.0",
+    "wait-on": "^8.0.4"
+  },
+  "build": {
+    "appId": "br.openbot.misterionaestacao",
+    "productName": "Mistério na Estação",
+    "files": [
+      "dist/**/*",
+      "electron.cjs",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "asar": true,
+    "win": { "target": ["nsis", "portable"] },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
+  }
+}

@@ -34,6 +34,8 @@ npm run desktop:build
 
 Os artefatos aparecem em `release/`. A janela salva o progresso localmente. O Windows pode exibir o aviso SmartScreen em pacotes sem assinatura.
 
+Pacotes publicados (Release v0.1.0): https://github.com/Leozinhobh77/misterio-na-estacao/releases/tag/v0.1.0
+
 Pacotes gerados em 18/11/2026 (sem assinatura digital):
 
 | Arquivo | Tamanho | SHA-256 |
